@@ -1,0 +1,74 @@
+body {
+    font-size: 32px;
+    line-height: 85px;
+}
+.phone-layout {
+    margin: 0 auto;
+    width: 480px;
+    height: 925px;
+    background-color: black;
+    border-radius: 100px;
+    position: relative;
+}
+.inner-wrap {
+    padding-top: 260px;
+}
+.screen {
+    font-size: 50px;
+    color: #fff;
+    text-align: end;
+    width: 400px;
+    height: 85px;
+    padding-right: 5px;
+    margin: 0 auto 20px;
+    border-radius: 100px;
+ 
+}
+.buttons {
+    position: relative;
+}
+.buttons:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 190px;
+    background-color: #fff;
+    border:2px solid white;
+    width: 100px;
+}
+.buttons__list {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.buttons__list-button {
+    text-align: center; 
+    align-content: center;
+    height: 85px;
+    /* line-height: 85px; */
+    width: 85px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(49,49,49)
+}
+
+.buttons__list-button:not(:nth-child(4n)) {
+    margin-bottom: 15px;
+}
+.buttons__list-button:nth-child(-n+3) {  
+    background-color: rgb(160,160,160);
+    color:black;
+}
+
+
+.buttons__list-button:nth-child(4n),
+.buttons__list-button:last-child {
+    margin-right: 45px;
+    background-color: rgb(255,149,0);
+}
+
+.big-button {
+    width: 190px;
+    border-radius: 100px
+} 
